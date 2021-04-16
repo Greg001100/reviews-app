@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import CompanyProfile from './components/CompanyProfile'
+import CompanyProfile from "./components/CompanyProfile";
 
 function App() {
   return (

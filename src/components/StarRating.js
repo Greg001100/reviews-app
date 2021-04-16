@@ -1,10 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import {
   Star,
   StarFill,
   StarHalf,
-  CaretDownFill,
-  CaretRightFill,
 } from "react-bootstrap-icons";
 
 const StarRating = (props) => {
@@ -18,19 +16,19 @@ const StarRating = (props) => {
     } else if (rating < i + 1 && rating >= i + 0.5) {
       starArray.push("half");
     } else {
-      starArray.push("empty")
+      starArray.push("empty");
     }
   }
 
   return (
     <div className="align-items-center justify-content-center">
-      {starArray.map((el) => {
+      {starArray.map((el, i) => {
         if (el === "full") {
-          return <StarFill color="orange" className="mb-1"/>;
+          return <StarFill key={i} color="orange" className="mb-1" />;
         } else if (el === "half") {
-          return <StarHalf color="orange" className="mb-1" />;
+          return <StarHalf key={i} color="orange" className="mb-1" />;
         } else {
-            return <Star color="orange" className="mb-1" />
+          return <Star key={i} color="orange" className="mb-1" />;
         }
       })}
       <span> ({rating}) </span>
