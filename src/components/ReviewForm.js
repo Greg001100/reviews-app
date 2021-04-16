@@ -77,30 +77,35 @@ const ReviewForm = (props) => {
               <Form.Check
                 inline
                 label="1"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setOverall(1)}
               />
               <Form.Check
                 inline
                 label="2"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setOverall(2)}
               />
               <Form.Check
                 inline
                 label="3"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setOverall(3)}
               />
               <Form.Check
                 inline
                 label="4"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setOverall(4)}
               />
               <Form.Check
                 inline
                 label="5"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setOverall(5)}
               />
@@ -110,30 +115,35 @@ const ReviewForm = (props) => {
               <Form.Check
                 inline
                 label="1"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setPriceRating(1)}
               />
               <Form.Check
                 inline
                 label="2"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setPriceRating(2)}
               />
               <Form.Check
                 inline
                 label="3"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setPriceRating(3)}
               />
               <Form.Check
                 inline
                 label="4"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setPriceRating(4)}
               />
               <Form.Check
                 inline
                 label="5"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setPriceRating(5)}
               />
@@ -143,30 +153,35 @@ const ReviewForm = (props) => {
               <Form.Check
                 inline
                 label="1"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setSpeedRating(1)}
               />
               <Form.Check
                 inline
                 label="2"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setSpeedRating(2)}
               />
               <Form.Check
                 inline
                 label="3"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setSpeedRating(3)}
               />
               <Form.Check
                 inline
                 label="4"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setSpeedRating(4)}
               />
               <Form.Check
                 inline
                 label="5"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setSpeedRating(5)}
               />
@@ -178,30 +193,35 @@ const ReviewForm = (props) => {
               <Form.Check
                 inline
                 label="1"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setCServRating(1)}
               />
               <Form.Check
                 inline
                 label="2"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setCServRating(2)}
               />
               <Form.Check
                 inline
                 label="3"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setCServRating(3)}
               />
               <Form.Check
                 inline
                 label="4"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setCServRating(4)}
               />
               <Form.Check
                 inline
                 label="5"
+                name="ratingRad"
                 type="radio"
                 onClick={() => setCServRating(5)}
               />
