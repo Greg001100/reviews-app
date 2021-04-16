@@ -1,1 +1,20 @@
 /* TODO Add site wide styles */
+.bg--dark-blue {
+    background-color: #051e34;
+}
+
+.borange {
+    background-color: #f65335;
+}
+
+.noBorder {
+    border:none;
+}
+
+.borange:disabled {
+    background-color:#fa9785;
+}
+
+.borange:hover {
+    background-color: #da2f11;
+}
