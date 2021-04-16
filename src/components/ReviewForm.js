@@ -215,6 +215,7 @@ const ReviewForm = (props) => {
               type="text"
               placeholder="Enter your name"
               onChange={updateName}
+              value={name}
               required
             />
 
@@ -222,6 +223,7 @@ const ReviewForm = (props) => {
               as='textarea'
               placeholder="How was the service?"
               onChange={updateReview}
+              value={review}
               rows={5}
               required
             />
