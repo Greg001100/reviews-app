@@ -54,6 +54,7 @@ const ReviewForm = (props) => {
         cServRating: cServRating,
         priceRating: priceRating,
         review: review,
+        timestamp: new Date(),
     })
 
 
@@ -63,12 +64,13 @@ const ReviewForm = (props) => {
     setPriceRating(null);
     setName("");
     setReview("");
+    props.setUpdateCount(props.updateCount+1)
     handleClose();
   };
 
   return (
     <>
-      <Button className="my-3 borange noBorder" block size="sm" onClick={handleShow}>
+      <Button className="my-3 borange w-auto noBorder" block size="sm" onClick={handleShow}>
         Write a Review
       </Button>
 
@@ -111,37 +113,37 @@ const ReviewForm = (props) => {
                 onClick={() => setOverall(5)}
               />
             </Form.Group>
-            <Form.Group>
-              <Form.Label className='mr-1'>Customer Service Rating: </Form.Label>
+            <Form.Group >
+              <Form.Label className='mr-1'>Timeliness Rating: </Form.Label>
               <Form.Check
                 inline
                 label="1"
                 type="radio"
-                onClick={() => setCServRating(1)}
+                onClick={() => setSpeedRating(1)}
               />
               <Form.Check
                 inline
                 label="2"
                 type="radio"
-                onClick={() => setCServRating(2)}
+                onClick={() => setSpeedRating(2)}
               />
               <Form.Check
                 inline
                 label="3"
                 type="radio"
-                onClick={() => setCServRating(3)}
+                onClick={() => setSpeedRating(3)}
               />
               <Form.Check
                 inline
                 label="4"
                 type="radio"
-                onClick={() => setCServRating(4)}
+                onClick={() => setSpeedRating(4)}
               />
               <Form.Check
                 inline
                 label="5"
                 type="radio"
-                onClick={() => setCServRating(5)}
+                onClick={() => setSpeedRating(5)}
               />
             </Form.Group>
             <Form.Group>
@@ -177,37 +179,37 @@ const ReviewForm = (props) => {
                 onClick={() => setPriceRating(5)}
               />
             </Form.Group>
-            <Form.Group >
-              <Form.Label className='mr-1'>Timeliness Rating: </Form.Label>
+            <Form.Group>
+              <Form.Label className='mr-1'>Customer Service Rating: </Form.Label>
               <Form.Check
                 inline
                 label="1"
                 type="radio"
-                onClick={() => setSpeedRating(1)}
+                onClick={() => setCServRating(1)}
               />
               <Form.Check
                 inline
                 label="2"
                 type="radio"
-                onClick={() => setSpeedRating(2)}
+                onClick={() => setCServRating(2)}
               />
               <Form.Check
                 inline
                 label="3"
                 type="radio"
-                onClick={() => setSpeedRating(3)}
+                onClick={() => setCServRating(3)}
               />
               <Form.Check
                 inline
                 label="4"
                 type="radio"
-                onClick={() => setSpeedRating(4)}
+                onClick={() => setCServRating(4)}
               />
               <Form.Check
                 inline
                 label="5"
                 type="radio"
-                onClick={() => setSpeedRating(5)}
+                onClick={() => setCServRating(5)}
               />
             </Form.Group>
 

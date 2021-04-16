@@ -18,3 +18,13 @@
 .borange:hover {
     background-color: #da2f11;
 }
+
+.small-text {
+    font-size: small;
+}
+
+.quote {
+    font-size: 1.2rem;
+    font-family: cursive;
+    color: rgb(38, 38, 38);
+}
