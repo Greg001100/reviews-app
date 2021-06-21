@@ -96,6 +96,8 @@ const CompanyProfile = (props) => {
         <Col xs={7} className="bg-light mt-5 text-center">
           <h1>Colorado Carrying Co. Reviews</h1>
           <h1>Colorado Carrying Co. Reviews</h1>
+          <h1>Colorado Carrying Co. Reviews</h1>
+          <h1>Colorado Carrying Co. Reviews</h1>
           <ReviewForm
             className="w-auto"
             db={db}
