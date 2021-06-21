@@ -58,6 +58,8 @@ const CompanyProfile = (props) => {
           <Col></Col>
           <Col xs={7} className="bg-white mt-5 text-center rounded">
             <h1>Colorado Carrying Co. Reviews</h1>
+            <h1>Colorado Carrying Co. Reviews</h1>
+            <h1>Colorado Carrying Co. Reviews</h1>
             <div className="d-flex justify-content-center">
               Overall Rating: <StarRating rating={overall} />
             </div>
@@ -93,6 +95,8 @@ const CompanyProfile = (props) => {
       <Row>
         <Col></Col>
         <Col xs={7} className="bg-light mt-5 text-center">
+          <h1>Colorado Carrying Co. Reviews</h1>
+          <h1>Colorado Carrying Co. Reviews</h1>
           <h1>Colorado Carrying Co. Reviews</h1>
           <ReviewForm
             className="w-auto"
