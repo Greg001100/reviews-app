@@ -19,7 +19,7 @@ jobs:
       #     FIREBASE_CLI_PREVIEWS: hostingchannels
 
   test:
-    runs-on: ubuntu_latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - name: Testim
