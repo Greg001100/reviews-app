@@ -75,13 +75,13 @@ const CompanyProfile = (props) => {
               Customer Service:
               <StarRating rating={cServRating} />
             </div>
-            {/* <ReviewForm
+            <ReviewForm
               className="w-auto"
               db={db}
               updateCount={updateCount}
             //   this is done so that the page auto-updates when a new review is submitted
               setUpdateCount={(count) => setUpdateCount(count)}
-            /> */}
+            />
             <ReviewList reviewsArray={reviewsArray} />
           </Col>
           <Col></Col>
