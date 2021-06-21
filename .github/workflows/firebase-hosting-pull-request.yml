@@ -19,9 +19,6 @@ jobs:
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
 
-  test:
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/checkout@v2
       - name: Testim
         run: sudo npm i -g @testim/testim-cli && testim --token "FdNXFf9ob5huvXCbgnjSxs6iWvQwbsdCpHI7jO5onVbjiFLbds" --project "c9I714KAZ6YVvB6oxrup" --grid "Testim-Grid"
