@@ -12,9 +12,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci && npm run build
+
       - uses: instinctstudios/testim-cli-gh-action@v0.6.0
         with:
-          project-id: "FdNXFf9ob5huvXCbgnjSxs6iWvQwbsdCpHI7jO5onVbjiFLbds"
+          token: "FdNXFf9ob5huvXCbgnjSxs6iWvQwbsdCpHI7jO5onVbjiFLbds"
+          project-id: "c9I714KAZ6YVvB6oxrup"
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
