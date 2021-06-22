@@ -21,4 +21,4 @@ jobs:
 
       - uses: actions/checkout@v2
       - name: Testim
-        run: sudo npm i -g @testim/testim-cli && testim --token "FdNXFf9ob5huvXCbgnjSxs6iWvQwbsdCpHI7jO5onVbjiFLbds" --project "c9I714KAZ6YVvB6oxrup" --grid "Testim-Grid"
+        run: sudo npm i -g @testim/testim-cli && testim --token '${{ secrets.TESTIM_TOKEN }}' --project "c9I714KAZ6YVvB6oxrup" --grid "Testim-Grid"
