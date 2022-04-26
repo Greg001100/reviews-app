@@ -18,7 +18,3 @@ jobs:
           projectId: reviewsapp-94b53
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
-
-      - uses: actions/checkout@v2
-      - name: Testim
-        run: sudo npm i -g @testim/testim-cli && testim --token '${{ secrets.TESTIM_TOKEN }}' --project "c9I714KAZ6YVvB6oxrup" --grid "Testim-Grid"

@@ -10,7 +10,7 @@ const ReviewsList = (props) => {
       {reviewsArray.map((review, i) => {
         let date = review.timestamp.toDate().toDateString();
         return (
-          <Card key={i} className="my-2">
+          <Card className="my-2">
             <Card.Header as="h5" className="d-flex justify-content-between">
               <span>{review.name} says:</span>
               <span>{date}</span>
