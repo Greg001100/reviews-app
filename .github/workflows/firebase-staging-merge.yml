@@ -3,6 +3,10 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - Development
+
+env:
+  ENVIRONMENT: staging
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
@@ -18,4 +22,3 @@ jobs:
           projectId: smash2-d42c5
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
-          ENVIRONMENT: staging

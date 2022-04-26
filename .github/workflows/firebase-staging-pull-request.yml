@@ -3,6 +3,10 @@ name: Deploy to Firebase Staging Hosting on Development PR
   pull_request:
     branches:
       - Development
+
+env:
+  ENVIRONMENT: staging
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
@@ -18,4 +22,3 @@ jobs:
           projectId: smash2-d42c5
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
-          ENVIRONMENT: staging
