@@ -12,8 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set Env
-        run: echo "ENVIRONMENT=STAGING" >> $GITHUB_ENV
+      - name: create env file
+        run: |
+          touch .env
+          echo GA_env=STAGING >> .env
       - run: npm ci && npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0

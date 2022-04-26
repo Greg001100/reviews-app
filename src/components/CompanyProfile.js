@@ -75,7 +75,7 @@ const CompanyProfile = (props) => {
               <StarRating rating={cServRating} />
             </div>
             <div className="d-flex justify-content-center">
-             {process.env.ENVIRONMENT} Environment
+             {process.env.GA_env} Environment
             </div>
             <ReviewForm
               className="w-auto"
