@@ -18,3 +18,4 @@ jobs:
           projectId: smash2-d42c5
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+          ENVIRONMENT: staging

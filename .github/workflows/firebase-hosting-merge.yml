@@ -21,3 +21,4 @@ jobs:
           projectId: reviewsapp-94b53
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
+          ENVIRONMENT: production
