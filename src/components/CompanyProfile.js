@@ -59,9 +59,6 @@ const CompanyProfile = (props) => {
           <Col xs={7} className="bg-white mt-5 text-center rounded">
             <h1>Colorado Carrying Co. Reviews</h1>
             <h1>Colorado Carrying Co. Reviews</h1>
-            <h1>Colorado Carrying Co. Reviews</h1>
-            <h1>Colorado Carrying Co. Reviews</h1>
-            <h1>Colorado Carrying Co. Reviews</h1>
             <div className="d-flex justify-content-center">
               Overall Rating: <StarRating rating={overall} />
             </div>
