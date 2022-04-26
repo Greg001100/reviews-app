@@ -16,7 +16,6 @@ jobs:
       - name: Set Env
         run: echo "ENVIRONMENT=staging" >> $GITHUB_ENV
 
-      - uses: actions/checkout@v2
       - run: npm ci && npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
