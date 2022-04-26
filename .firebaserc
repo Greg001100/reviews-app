@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "reviewsapp-94b53"
+    "default": "reviewsapp-94b53",
+    "staging": "smash2-d42c5"
   }
 }
