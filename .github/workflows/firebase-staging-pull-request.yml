@@ -16,6 +16,8 @@ jobs:
         run: |
           touch .env
           echo "GA_env=STAGING" >> .env
+
+      - uses: actions/checkout@v2
       - run: npm ci && npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
