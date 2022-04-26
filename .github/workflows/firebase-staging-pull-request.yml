@@ -7,6 +7,9 @@ name: Deploy to Firebase Staging Hosting on Development PR
 env:
   ENVIRONMENT: staging
 
+inputs:
+  environment: staging
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest

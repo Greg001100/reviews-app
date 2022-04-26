@@ -18,6 +18,10 @@ const CompanyProfile = (props) => {
   const [priceRating, setPriceRating] = useState(null);
   const [reviewsArray, setReviewsArray] = useState([]);
   const [updateCount, setUpdateCount] = useState(0);
+  const core = require('@actions/core');
+  const github = require('@actions/github');
+
+  const gaenv = core.getInput('environment')
 
   useEffect(() => {
     const awaitReviews = async () => {
@@ -78,6 +82,9 @@ const CompanyProfile = (props) => {
             </div>
             <div className="d-flex justify-content-center">
              {process.env.GA_env} ga Environment
+            </div>
+            <div className="d-flex justify-content-center">
+             {gaenv} ga input Environment
             </div>
             <ReviewForm
               className="w-auto"

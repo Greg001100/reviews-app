@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@actions/core": "^1.7.0",
+    "@actions/github": "^5.0.1",
     "@testim/testim-cli": "^3.171.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
