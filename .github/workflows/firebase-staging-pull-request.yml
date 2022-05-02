@@ -11,14 +11,14 @@ jobs:
   build_and_preview:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: create env file
-        run: |
-          touch .env
-          echo REACT_APP_GA_env=staging >> .env
+      # - uses: actions/checkout@v2
+      # - name: create env file
+      #   run: |
+      #     touch .env
+      #     echo REACT_APP_GA_env=staging >> .env
 
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
+      - run: npm ci && npm run build-staging
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
