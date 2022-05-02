@@ -77,7 +77,7 @@ const CompanyProfile = (props) => {
              {process.env.ENVIRONMENT} Environment
             </div>
             <div className="d-flex justify-content-center">
-             {process.env.REACT_APP_GA_env} ga Environment
+             {process.env.REACT_APP_ENVIRONMENT} ga Environment
             </div>
             <ReviewForm
               className="w-auto"
