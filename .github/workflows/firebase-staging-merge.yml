@@ -3,11 +3,19 @@ name: Deploy to Firebase Hosting on merge
   push:
     branches:
       - Development
+
+env:
+  ENVIRONMENT: staging
+
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v2
+      - name: Set Env
+        run: echo "ENVIRONMENT=staging" >> $GITHUB_ENV
+
       - run: npm ci && npm run build
 
       - uses: FirebaseExtended/action-hosting-deploy@v0

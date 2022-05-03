@@ -3,12 +3,17 @@ name: Deploy to Firebase Staging Hosting on Development PR
   pull_request:
     branches:
       - Development
+
+env:
+  REACT_APP_GA_ENVIRONMENT: staging
+
 jobs:
   build_and_preview:
     runs-on: ubuntu-latest
     steps:
+
       - uses: actions/checkout@v2
-      - run: npm ci && npm run build
+      - run: npm ci && npm run build-staging
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
