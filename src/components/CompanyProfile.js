@@ -49,6 +49,7 @@ const CompanyProfile = (props) => {
       );
     };
     awaitReviews();
+    console.log(process.env.REACT_APP_ENVIRONMENT)
   }, [updateCount]);
 
   if (reviewsArray.length) {
@@ -72,6 +73,12 @@ const CompanyProfile = (props) => {
             <div className="d-flex justify-content-center">
               Customer Service:
               <StarRating rating={cServRating} />
+            </div>
+            <div className="d-flex justify-content-center">
+             {process.env.REACT_APP_GA_env} react_app Environment
+            </div>
+            <div className="d-flex justify-content-center">
+             {process.env.REACT_APP_GA_ENVIRONMENT} ga react Environment
             </div>
             <ReviewForm
               className="w-auto"
